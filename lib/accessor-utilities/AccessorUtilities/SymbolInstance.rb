@@ -9,14 +9,6 @@ module AccessorUtilities::SymbolInstance
     return to_s.is_variable_name?
 	end
 
-	#########################
-	#  write_accessor_name  #
-	#########################
-
-	def write_accessor_name
-	  return to_s.write_accessor_name
-	end
-
 	###################
 	#  variable_name  #
 	###################
@@ -33,11 +25,20 @@ module AccessorUtilities::SymbolInstance
 	  return to_s.accessor_name
 	end
 
+	#########################
+	#  write_accessor_name  #
+	#########################
+
+	def write_accessor_name
+	  return to_s.write_accessor_name
+	end
+
 	##################
 	#  swizzle_name  #
 	##################
 
-	def swizzle_name( swizzled_method_prefix, append_equals_to_method_name = false )
-		return to_s.swizzle_name
+	def swizzle_name( swizzled_method_prefix = 'swizzled__', append_equals_to_method_name = false )
+		return to_s.swizzle_name( swizzled_method_prefix, append_equals_to_method_name )
 	end
+	
 end

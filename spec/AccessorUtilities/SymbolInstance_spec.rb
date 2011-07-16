@@ -12,14 +12,6 @@ describe AccessorUtilities::SymbolInstance do
 		:not_variable.is_variable_name?.should == false
 	end
 
-	#########################
-	#  write_accessor_name  #
-	#########################
-
-	it 'can return write accessor name for accessor name' do
-		:accessor_name.write_accessor_name.should == :accessor_name=
-	end
-
 	###################
 	#  variable_name  #
 	###################
@@ -38,4 +30,22 @@ describe AccessorUtilities::SymbolInstance do
 		:not_variable.accessor_name.should == :not_variable		
 	end
 	
+	#########################
+	#  write_accessor_name  #
+	#########################
+
+	it 'can return write accessor name for accessor name' do
+		:accessor_name.write_accessor_name.should == :accessor_name=
+	end
+
+	##################
+	#  swizzle_name  #
+	##################
+
+  it 'can return a swizzle name given a prefix for an accessor name' do
+    :accessor_name.swizzle_name.should == :swizzled__accessor_name
+    :accessor_name.swizzle_name( :swizzle_prefix__, false ).should == :swizzle_prefix__accessor_name
+    :accessor_name.swizzle_name( :swizzle_prefix__, true ).should == :swizzle_prefix__accessor_name=
+  end
+
 end
