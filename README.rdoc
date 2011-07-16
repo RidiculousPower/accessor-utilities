@@ -61,7 +61,7 @@ Result is method call invokes block used to swizzle method:
   
   end
 
-## AccessorUtilities::StringInstance and AccessorUtilities::Symbol Instance ##
+## AccessorUtilities::StringInstance and AccessorUtilities::SymbolInstance ##
 
 * is_variable_name?
 * variable_name

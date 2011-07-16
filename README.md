@@ -67,7 +67,7 @@ class ExampleClass
 end
 ```
 
-## AccessorUtilities::StringInstance and AccessorUtilities::Symbol Instance ##
+## AccessorUtilities::StringInstance and AccessorUtilities::SymbolInstance ##
 
 * is_variable_name?
 * variable_name
