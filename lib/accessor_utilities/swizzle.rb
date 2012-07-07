@@ -1,5 +1,5 @@
 
-module AccessorUtilities::Swizzle
+module ::AccessorUtilities::Swizzle
 
 	####################
 	#  swizzle_method  #

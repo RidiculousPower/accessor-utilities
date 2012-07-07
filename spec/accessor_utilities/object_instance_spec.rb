@@ -1,5 +1,5 @@
 
-require_relative '../../lib/accessor-utilities.rb'
+require_relative '../../lib/accessor_utilities.rb'
 
 describe AccessorUtilities::ObjectInstance do
   

@@ -1,6 +1,6 @@
 # Accessor Utilities #
 
-http://rubygems.org/gems/accessor-utilities
+http://rubygems.org/gems/accessor_utilities
 
 # Description #
 
@@ -77,13 +77,13 @@ end
 
 # Install #
 
-* sudo gem install accessor-utilities
+* sudo gem install accessor_utilities
 
 # License #
 
   (The MIT License)
 
-  Copyright (c) 2011 Asher
+  Copyright (c) 2012 Ridiculous Power, Asher
 
   Permission is hereby granted, free of charge, to any person obtaining
   a copy of this software and associated documentation files (the

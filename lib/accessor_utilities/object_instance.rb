@@ -1,5 +1,5 @@
 
-module AccessorUtilities::ObjectInstance
+module ::AccessorUtilities::ObjectInstance
 
 	#####################################
 	#  instance_variables_as_accessors  #

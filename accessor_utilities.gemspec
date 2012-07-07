@@ -2,8 +2,8 @@ require 'date'
 
 Gem::Specification.new do |spec|
 
-  spec.name                      =  'accessor-utilities'
-  spec.rubyforge_project         =  'accessor-utilities'
+  spec.name                      =  'accessor_utilities'
+  spec.rubyforge_project         =  'accessor_utilities'
   spec.version                   =  '1.0.0'
 
   spec.summary                   =  "Utility methods for accessor-related meta-programming."
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.authors                   =  [ 'Asher' ]
   spec.email                     =  'asher@ridiculouspower.com'
-  spec.homepage                  =  'http://rubygems.org/gems/accessor-utilities'
+  spec.homepage                  =  'http://rubygems.org/gems/accessor_utilities'
 
   spec.date                      =  Date.today.to_s
   
