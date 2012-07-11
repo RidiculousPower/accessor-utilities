@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
 
   spec.name                      =  'accessor_utilities'
   spec.rubyforge_project         =  'accessor_utilities'
-  spec.version                   =  '1.0.0'
+  spec.version                   =  '1.0.1'
 
   spec.summary                   =  "Utility methods for accessor-related meta-programming."
   spec.description               =  "Extends String and Symbol instances with variable/accessor methods, provides swizzling helpers, provides accessor-related math for transforming :accessor, :reader, :writer."
@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors                   =  [ 'Asher' ]
   spec.email                     =  'asher@ridiculouspower.com'
   spec.homepage                  =  'http://rubygems.org/gems/accessor_utilities'
+
+  spec.required_ruby_version     = ">= 1.9.1"
 
   spec.date                      =  Date.today.to_s
   

@@ -30,7 +30,21 @@ module ::AccessorUtilities::StringInstance
 	#########################
 
 	def write_accessor_name
-	  return ( self[ length - 1 ] == '=' ? to_sym : ( self + '=' ).to_sym )
+
+	  case self[ -1 ]
+	    
+      when '?'
+        return_value = self.dup
+        return_value[ -1 ] = '='
+      when '='
+        return_value = to_sym
+      else
+        return_value = ( self + '=' ).to_sym
+
+    end
+
+	  return return_value
+
 	end
 
 	##################
