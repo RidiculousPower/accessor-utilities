@@ -26,6 +26,12 @@ module ::AccessorUtilities::SymbolInstance
 	  return to_s.accessor_name
 	end
 
+	##############
+	#  accessor  #
+	##############
+	
+	alias_method :accessor, :accessor_name
+
 	#########################
 	#  write_accessor_name  #
 	#########################
@@ -33,6 +39,12 @@ module ::AccessorUtilities::SymbolInstance
 	def write_accessor_name
 	  return to_s.write_accessor_name
 	end
+
+	####################
+	#  write_accessor  #
+	####################
+	
+	alias_method :write_accessor, :write_accessor_name
 
 	##################
 	#  swizzle_name  #

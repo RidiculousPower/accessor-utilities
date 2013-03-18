@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
 
   spec.name                      =  'accessor_utilities'
   spec.rubyforge_project         =  'accessor_utilities'
-  spec.version                   =  '1.0.2'
+  spec.version                   =  '1.0.3'
 
   spec.summary                   =  "Utility methods for accessor-related meta-programming."
   spec.description               =  "Extends String and Symbol instances with variable/accessor methods, provides swizzling helpers, provides accessor-related math for transforming :accessor, :reader, :writer."
