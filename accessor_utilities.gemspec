@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
 
   spec.name                      =  'accessor_utilities'
   spec.rubyforge_project         =  'accessor_utilities'
-  spec.version                   =  '1.0.1'
+  spec.version                   =  '1.0.2'
 
   spec.summary                   =  "Utility methods for accessor-related meta-programming."
   spec.description               =  "Extends String and Symbol instances with variable/accessor methods, provides swizzling helpers, provides accessor-related math for transforming :accessor, :reader, :writer."
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   
   # ensure the gem is built out of versioned files
   # also make sure we include the bundle since we exclude it from git storage
-  spec.files                     = Dir[ '{lib,spec}/**/*',
+  spec.files                     = Dir[ '{lib,lib_ext,spec}/**/*',
                                         'README*', 
                                         'LICENSE*' ] & `git ls-files -z`.split("\0")
 

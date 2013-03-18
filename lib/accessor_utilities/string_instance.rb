@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 
 module ::AccessorUtilities::StringInstance
 
@@ -25,6 +26,12 @@ module ::AccessorUtilities::StringInstance
 	  return ( is_variable_name? ? self.slice( 1, length ).to_sym : to_sym )
 	end
 
+	##############
+	#  accessor  #
+	##############
+	
+	alias_method :accessor, :accessor_name
+
 	#########################
 	#  write_accessor_name  #
 	#########################
@@ -46,6 +53,12 @@ module ::AccessorUtilities::StringInstance
 	  return return_value
 
 	end
+
+	####################
+	#  write_accessor  #
+	####################
+	
+	alias_method :write_accessor, :write_accessor_name
 
 	##################
 	#  swizzle_name  #
