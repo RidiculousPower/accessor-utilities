@@ -23,7 +23,18 @@ module ::AccessorUtilities::StringInstance
 	###################
 
 	def accessor_name
-	  return ( is_variable_name? ? self.slice( 1, length ).to_sym : to_sym )
+
+    return_value = nil
+	  
+	  case self[ -1 ]
+      when '='
+        return_value = slice( 0, length - 1 )
+      else
+        return_value = is_variable_name? ? self.slice( 1, length ).to_sym : to_sym
+    end
+
+	  return return_value
+	  
 	end
 
 	##############
@@ -37,7 +48,9 @@ module ::AccessorUtilities::StringInstance
 	#########################
 
 	def write_accessor_name
-
+    
+    return_value = nil
+    
 	  case self[ -1 ]
 	    
       when '?'
